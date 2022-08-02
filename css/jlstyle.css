@@ -22,6 +22,8 @@
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
 :root {
   --primary-color: rgb(54 103 176 / 88%);
   --white-color: #ffffff;
@@ -117,6 +119,7 @@ p {
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
   line-height: 1.5em;
+  text-align: justify;
 }
 
 b,
@@ -480,7 +483,7 @@ a:focus {
   -----------------------------------------*/
 
 .about {
-  background:#225281b0;
+  background: #225281b0;
 }
 
 .about-working-hours {
@@ -685,16 +688,17 @@ button#submit-button:hover {
 }
 
 .meuback {
-  background-color: rgb(234 239 229 / 28%);
+  background-color: rgb(234 239 229 / 64%);
+  border-radius: 1rem;
 }
 
 .sectioncalendar {
   padding: 6rem 0;
 }
 
-p.about {
+/* p.about {
   color: var(--dark-color);
-}
+} */
 
 div.carousel {
   border: solid 7px #4e79b9;
@@ -705,6 +709,21 @@ section.schedule {
   background-color: #225281b0;
 }
 
-section.class{
+section.class {
   background-color: rgb(54 103 176 / 94%);
+}
+
+.borda-cruz {
+  border-radius: 5px;
+}
+
+.paddingcruz {
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-site {
+  font-family: 'Rubik', sans-serif;
 }

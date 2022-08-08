@@ -33,6 +33,7 @@
 
   --gray-color: #909090;
   --blue-jl: rgb(54 103 176 / 88%);
+  --blue-jl2: #225281b0;
   --golden-jl: #ca9a2c;
   --link-color: #404040;
   --p-color: #666262;
@@ -101,7 +102,9 @@ h3 {
 
 h4 {
   font-size: var(--h4-font-size);
-}
+  color: #0a305f;
+
+  }
 
 h5 {
   font-size: var(--h5-font-size);
@@ -129,7 +132,7 @@ strong {
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 2rem;
 }
 
 
@@ -261,8 +264,8 @@ a:focus {
   -----------------------------------------*/
 
 .navbar {
-  background: var(--blue-jl);
-  padding: 1rem;
+  background: rgb(54 103 176);
+  padding: 0rem;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -331,7 +334,7 @@ a:focus {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-  background: var(--primary-color);
+  background: rgb(5 41 92);
   transition: background 10ms 300ms ease;
   display: block;
   width: 30px;
@@ -347,7 +350,7 @@ a:focus {
   position: absolute;
   right: 0;
   left: 0;
-  background: var(--primary-color);
+  background: #05295c;
   width: 30px;
   height: 2px;
   content: '';
@@ -631,7 +634,7 @@ button#submit-button:hover {
 @media screen and (max-width: 992px) {
 
   .section {
-    padding: 5rem 0;
+    padding: 2rem 0;
   }
 
   .nav-item .nav-link {
@@ -714,7 +717,8 @@ section.class {
 }
 
 .borda-cruz {
-  border-radius: 5px;
+  border-radius: 6px;
+  border: solid 7px #4e79b9;
 }
 
 .paddingcruz {
@@ -726,4 +730,35 @@ section.class {
 
 .titulo-site {
   font-family: 'Rubik', sans-serif;
+}
+
+.padrao-fundo {
+  background-image: url('../images/padrao.webp');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 100vh;
+  position: relative;
+}
+
+section.contact {
+  background-color: rgb(54 103 176 / 94%);
+}
+
+.tablecolor {
+  background-color: var(--background-gradient);
+}
+
+.textocentro {
+  text-align: center;
+}
+
+.cardsborda {
+  border: solid 7px #4e79b9;
+  border-radius: 7px;
+}
+
+.lateral-ajust{
+  padding: 0px 15px 0px 15px;
 }

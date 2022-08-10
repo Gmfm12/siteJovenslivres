@@ -762,3 +762,13 @@ section.contact {
 .lateral-ajust{
   padding: 0px 15px 0px 15px;
 }
+.table-responsive-sm{
+  height:400px;  
+  overflow:scroll;
+}
+thead tr:nth-child(1) th{
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}

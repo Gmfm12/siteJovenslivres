@@ -743,17 +743,16 @@
         <div class="container">
             <div class="row">
                 <div class="ml-auto col-lg-4 col-md-5">
-                    <p class="copyright-text">Copyright &copy; 2020 Centro de Reabilitação Jovens Livres Co.
-
-                        <br>Design: <a href=""></a>
+                    <p class="copyright-text">Direitos Reservados Centro de Reabilitação Jovens Livres <span id="year"></span> . 
+                        <br>Desenvolvido por: <a href="https://github.com/Gmfm12/">Gabriel Fideles & <a href="https://linktr.ee/je4npw">Jean Wick</a>
                     </p>
                 </div>
                 <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
                     <p class="mr-4">
                         <i class="fa fa-envelope-o mr-1"></i>
-                        <a href="#">hello@company.co</a>
+                        <a href="mailto:leirbag081982@gmail.com">leirbag081982@gmail.com</a>
                     </p>
-                    <p><i class="fa fa-phone mr-1"></i> 010-020-0840</p>
+                    <p><i class="fa fa-phone mr-1"></i>(47) 997520383</p>
                 </div>
             </div>
         </div>
@@ -770,13 +769,12 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="membership-form webform modalform" role="form" onsubmit="return false">
-                        <input type="text" class="form-control" name="post-name" placeholder="Nome">
-                        <input type="email" class="form-control" name="post-email" placeholder="e-mail">
-                        <input type="tel" class="form-control" name="post-phone" placeholder="(DD) 00000-0000" required>
-                        <!-- pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" -->
+                    <form class="membership-form webform modalform" role="form" onsubmit="return false" autocomplete="off">
+                        <input type="text" class="form-control" name="post-name" placeholder="Nome" required>
+                        <input type="email" class="form-control" name="post-email" placeholder="e-mail" required>
+                        <input type="tel" class="phone form-control" name="post-phone" placeholder="(DD) 00000-0000" required>
                         <textarea class="form-control" rows="3" name="post-message"
-                            placeholder="Mensagem Adicional"></textarea>
+                            placeholder="Mensagem Adicional" required></textarea>
                         <button type="submit" class="form-control" id="submit-button" name="submit"
                             onclick="sendmail()">Enviar</button>
                     </form>
@@ -787,6 +785,7 @@
     </div>
     <!-- SCRIPTS -->
     <script src="js/jquery.min.js"></script>
+    <script src='js/jquerymask.js'></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/smoothscroll.js"></script>

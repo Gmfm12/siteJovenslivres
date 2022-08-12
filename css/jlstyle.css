@@ -34,6 +34,7 @@
   --gray-color: #909090;
   --blue-jl: rgb(54 103 176 / 88%);
   --blue-jl2: #225281b0;
+  --blue-jl3: #1a3154;
   --golden-jl: #ca9a2c;
   --link-color: #404040;
   --p-color: #666262;
@@ -104,7 +105,7 @@ h4 {
   font-size: var(--h4-font-size);
   color: #0a305f;
 
-  }
+}
 
 h5 {
   font-size: var(--h5-font-size);
@@ -547,7 +548,7 @@ button#submit-button {
 }
 
 button#submit-button {
-  background: var(--dark-color);
+  background: var(--blue-jl3);
   border-color: transparent;
   color: var(--white-color);
   cursor: pointer;
@@ -759,16 +760,59 @@ section.contact {
   border-radius: 7px;
 }
 
-.lateral-ajust{
+.lateral-ajust {
   padding: 0px 15px 0px 15px;
 }
-.table-responsive-sm{
-  height:400px;  
-  overflow:scroll;
+
+.table-responsive-sm {
+  height: 400px;
+  overflow: scroll;
 }
-thead tr:nth-child(1) th{
+
+thead tr:nth-child(1) th {
   background: white;
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+/* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar:horizontal{
+  display: none;
+}
+
+/* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* aqui é a alça da barra, que demonstra a altura que você está na página
+  estou colocando uma cor azul clara nela*/
+::-webkit-scrollbar-thumb {
+  background: #2e9dd8;
+}
+
+/* degrade para a barra vertical */
+::-webkit-scrollbar-thumb {
+  background: #2e9dd8;
+  background: -moz-linear-gradient(top, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+  background: -webkit-linear-gradient(top, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+  background: linear-gradient(to bottom, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#333333', GradientType=0);
+}
+
+/* degrade para a barra horizontal com a direção do degrade alterada */
+/* obs: não precisa mais pois foi excluído */
+::-webkit-scrollbar-thumb:horizontal {
+  background: #2e9dd8;
+  background: -moz-linear-gradient(left, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+  background: -webkit-linear-gradient(left, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+  background: linear-gradient(to right, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#333333', GradientType=0);
 }

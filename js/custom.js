@@ -42,7 +42,7 @@ function sendmail() {
   dataEmail = $('form.modalform').serializeArray()
   $.ajax({
     type: "post",
-    url: "https://apidesastre.000webhostapp.com/32498759023841382/sendmessage.php",
+    url: "https://jjlapi.000webhostapp.com/crjljfuncionalidades/mensageiro.php",
     data: dataEmail,
     success: function (response) {
       alert(response)

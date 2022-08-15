@@ -35,6 +35,7 @@
   --blue-jl: rgb(54 103 176 / 88%);
   --blue-jl2: #225281b0;
   --blue-jl3: #1a3154;
+  --blue-jl4:rgb(54 103 176);
   --golden-jl: #ca9a2c;
   --link-color: #404040;
   --p-color: #666262;
@@ -457,7 +458,7 @@ a:focus {
 
 .table .thead-light th,
 .schedule-table tr td:first-child {
-  background: var(--primary-color);
+  background: var(--blue-jl4);
   border: 1px solid #212122;
   color: var(--white-color);
 }
@@ -478,7 +479,7 @@ a:focus {
 
 .table td,
 .table th {
-  padding: 1rem;
+  padding: 0rem;
 }
 
 
@@ -772,7 +773,7 @@ section.contact {
 thead tr:nth-child(1) th {
   background: white;
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 10;
 }
 

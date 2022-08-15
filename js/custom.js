@@ -42,7 +42,7 @@ function sendmail() {
   dataEmail = $('form.modalform').serializeArray()
   $.ajax({
     type: "post",
-    url: "https://olhomagico-app.umbler.net/crjljfuncionalidades/sendmail.php",
+    url: "https://olhomagicoapp.000webhostapp.com/functions/sendmail.php",
     data: dataEmail,
     success: function (response) {
       alert(response)
